@@ -1,0 +1,33 @@
+{
+  "name": "tasknote",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@reduxjs/toolkit": "^1.8.3",
+    "@supabase/supabase-js": "^1.35.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.34.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6",
+    "vite": "^3.0.0",
+    "vite-plugin-pwa": "^0.12.3"
+  }
+}

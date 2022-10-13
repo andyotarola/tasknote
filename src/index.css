@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+@layer components {
+
+    .landing-container {
+        @apply container grid grid-cols-1 gap-y-8 mx-auto p-2 md:grid-cols-2 justify-items-center md:px-10 lg:px-20 xl:px-40
+    }
+    .landing-img {
+        @apply w-auto h-[30rem] object-cover shadow-lg shadow-black
+    }
+
+    .tn-form__input {
+      @apply focus:border-sky-400 dark:bg-transparent;
+    }
+    .btn-primary {
+        @apply p-2
+        rounded-md 
+        bg-slate-900
+        hover:bg-slate-800
+        dark:bg-sky-500 
+        text-white
+        dark:hover:bg-sky-400
+        disabled:opacity-70
+        
+    }
+    .btn-icon {
+        @apply h-5 w-5 dark:hover:text-slate-300 select-none
+    }
+    .btn-item {
+        @apply  hover:bg-slate-100
+        hover:text-black
+        dark:hover:text-slate-300 
+        dark:hover:bg-slate-100/10
+        select-none
+    }
+    .separator{
+        @apply border-b border-slate-900/20 dark:border-slate-300/10
+    }
+    .dropdown-menu{
+        @apply absolute 
+        -right-1
+        -top-1
+        dark:bg-gray-800 
+        bg-white rounded-sm 
+        shadow-sm 
+        shadow-slate-400
+        dark:shadow-slate-600
+        p-4
+        z-10
+    }
+}
